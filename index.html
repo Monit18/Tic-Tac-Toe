@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>TIC TAC TOE</li>
+        </ul>
+    </nav>
+    <div class="players">
+        <div class="form">
+            <label>PLAYER 1 : </label>
+            <input type="text" id="player1">
+            <br><br><br><br>
+            <label>PLAYER 2 : </label>
+            <input type="text" id="player2">
+            <br><br><br><br><br><br>
+            <div class="btn">
+            <input type="button" value="START" id="start" onclick="startGame()">
+            </div>
+        </div>
+    </div>
+    <div class="gameContainer">
+        <div class="usernames">
+            <h2><u>SCOREBOARD</u></h2><br><br>
+            <span id="username1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="username2"></span><br><br>
+            <span id="score1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="score2"></span>
+        </div>
+        <div class="container">
+            <div class="boxes" id="0" style="border-left: 0; border-top: 0;"></div>
+            <div class="boxes" id="1" style="border-top: 0;"></div>
+            <div class="boxes" id="2" style="border-top: 0; border-right: 0;"></div>
+            <div class="boxes" id="3" style="border-left: 0;"></div>
+            <div class="boxes" id="4"></div>
+            <div class="boxes" id="5" style="border-right: 0;"></div>
+            <div class="boxes" id="6" style="border-bottom: 0; border-left: 0;"></div>
+            <div class="boxes" id="7" style="border-bottom: 0;"></div>
+            <div class="boxes" id="8" style="border-right: 0; border-bottom: 0;"></div>
+        </div>
+        <div class="buttons">
+            <input type="button" value="PLAY AGAIN" id="btn-1"><br><br><br><br><br><br><br>
+            <input type="button" value="START WITH NEW PLAYERS" id="btn-2" onclick="location.reload()">
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
